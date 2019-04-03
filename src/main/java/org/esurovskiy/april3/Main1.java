@@ -13,8 +13,8 @@ import java.util.LinkedList;
 public class Main1 {
     public static void main(String[] args) {
         String s = "(2-3)+[222]+{2*(2-2)}";
-
-        Deque<Character> deque = new LinkedList<Character>();
+        System.out.println(Arrays.asList(s.toCharArray()));
+        Deque<Character> deque = new LinkedList<>();
         for (final char c : s.toCharArray()) {
             if (c == '{' || c == '(' || c == '[') {
                 deque.addLast(c);
